@@ -26,6 +26,12 @@ const selectBelgiumFromBenelux = array => array[0];
 console.log(selectBelgiumFromBenelux(["Belgie", "Nederland", "Luxemburg"])); 
 // resultaat: "Belgie"
 
+const selectBelgiumFromBeneluxFind = array => {
+    return array.find(item => item === 'Belgie');
+}
+console.log(selectBelgiumFromBeneluxFind(["Belgie", "Nederland", "Luxemburg"]));
+
+
 /* D Schrijf een JavaScript functie om het laatste element uit een array te retourneren. */
 const lastElementInArray = array => array[array.length - 1];
 console.log(lastElementInArray(["Haas", "Cavia", "Kip", "Schildpad"])); 
